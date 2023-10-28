@@ -1,5 +1,11 @@
 import { useState } from "react";
 
+//motion
+import {motion} from "framer-motion"
+//variants
+import {fadeIn} from '../../variants';
+
+
 
 
 const Attract = () => {
@@ -16,7 +22,14 @@ const Attract = () => {
 
     
   return (
-    <div className="md:px-14 p-4 max-w-s mx-auto py-10">
+    <motion.div 
+    
+    variants={fadeIn("up", 0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once:false, amount:0.7}}
+
+    className="md:px-14 p-4 max-w-s mx-auto py-10"  id="campaigns">
       <div className="text-center">
         <h2 className="md:text-5xl text-3xl font-extrabold text-primary mb-2">You can launch these campings and <br/>attract customers.</h2>
       </div>
@@ -34,7 +47,7 @@ const Attract = () => {
           </div>)
         }
       </div>
-    </div>
+    </motion.div>
   );
 };
 
