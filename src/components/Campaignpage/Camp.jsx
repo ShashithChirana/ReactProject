@@ -18,6 +18,12 @@ const Camp = () => {
         {name:"Lost License", description:"Here you can inform customers about what to do when a license is lost." },
        
     ]
+   
+    
+    const Pat=[
+      {path:"/campss"}
+    ]
+    
 
 
   return (
@@ -65,7 +71,7 @@ const Camp = () => {
   
             <h3 className="text-3xl font-bold text-center text-blue-950">{act.name}</h3>
             <p className="text-gray-700 text-center text-lg my-5">{act.description}</p>
-            <button className="btnPrimary w-60 mx-auto mt-8 flex items-center justify-center" >Launch</button>
+          <a href="/campss" path="/campss"> <button  className="btnPrimary w-60 mx-auto mt-8 flex items-center justify-center" >Launch</button></a>
           </div>)
         }
       </div>

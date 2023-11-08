@@ -24,6 +24,7 @@ const Exhome = () => {
    >
     <h2 className=' mx-auto py-10 mt-28 md:text-7xl text-7xl font-bold text-[#010851] mb-6 leading-relaxed'><center>Conducting Examinations</center></h2>
 </motion.div>
+
 <motion.div
  
  variants={fadeIn("up", 0.2)}
@@ -76,26 +77,29 @@ const Exhome = () => {
 
             <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-2xl p-8 
             items-center flex justify-center hover:-translate-y-4 transition-all duration-300  cursor-pointer   '>
+                <a href='conx'>
                 <div className=" border-spacing-1.5" >
                     <img src={exconImg} alt=""/>
                     <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>Conduct online exams</h5>
-                </div>
+                </div></a>
             </div>
 
             <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-2xl p-8 
             items-center flex justify-center hover:-translate-y-4 transition-all duration-300  cursor-pointer md:mt-16'>
+                <a href='statx'>
                 <div>
                     <img src={exstatImg} alt=""/>
                     <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>Update exam and results status</h5>
-                </div>
+                </div></a>
             </div>
 
             <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-2xl p-8 
             items-center flex justify-center hover:-translate-y-4 transition-all duration-300  cursor-pointer '>
+                <a href='temp'>
                 <div>
                     <img src={extempImg} alt=""/>
                     <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>Release temporarry license</h5>
-                </div>
+                </div></a>
             </div>
 
             </div>

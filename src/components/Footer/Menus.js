@@ -1,32 +1,33 @@
-export const PRODUCTS = [
-    { name: "Drag And Drop", link: "#" },
-    { name: "Visual Studio X", link: "#" },
-    { name: "Easy Content", link: "#" },
+export const  HOME = [
+    { name: "Customer", link: "#" },
+    { name: "School", link: "#" },
+    { name: "MTD", link: "#" },
   ];
-  export const RESOURCES = [
-    { name: "Industries and tools", link: "#" },
-    { name: "Use cases", link: "#" },
-    { name: "Blog", link: "#" },
-    { name: "Online evenet", link: "#" },
-    { name: "Nostrud exercitation", link: "#" },
+  export const CUSTOMER = [
+    { name: "Department", link: "#" },
+    { name: "Feature", link: "#" },
+    { name: "DSchool", link: "#" },
+    { name: "About", link: "#" },
+   
   ];
-  export const COMPANY = [
-    { name: "Diversity & inclusion", link: "#" },
-    { name: "About us", link: "#" },
-    { name: "Press", link: "#" },
-    { name: "Customer Stories", link: "#" },
-    { name: "Online communities", link: "#" },
+  export const SCHOOL = [
+    
+    { name: "Exams", link: "/exm" },
+    { name: "Applicants", link: "/appli" },
+    { name: "Schedules", link: "/schedule" },
+    { name: "Campaigns", link: "/Camp" },
+    { name: "Payments", link: "/pay" },
   ];
-  export const SUPPORT = [
-    { name: "Documentation", link: "#" },
-    { name: "Tutorials & guides", link: "#" },
-    { name: "Webinars", link: "#" },
-    { name: "Open-source", link: "#" },
+  export const MTD = [
+    { name: "Overview", link: "#" },
+    { name: "Work", link: "#" },
+    { name: "About", link: "#" },
+    { name: "Do", link: "#" },
     
   ];
   
   export const Icons = [
-    { name: "logo-facebook", link: "#" },
+    { name: "logo-facebook", link: "https://web.facebook.com/search/top?q=shashith" },
     { name: "logo-twitter", link: "#" },
     { name: "logo-whatsapp", link: "#" },
     { name: "logo-linkedin", link: "#" },

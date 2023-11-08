@@ -6,6 +6,13 @@ import Schedhome from "./components/Schedpage/Schedhome"
 import Camp from "./components/Campaignpage/Camp"
 import Payhome from "./components/Paymentpage/Payhome"
 import Exhome from "./components/Exampage/Exhome"
+import Conhome from "./components/conexpge/Conhome"
+import Statuphome from "./components/statuppge/Statuphome"
+import Temphome from "./components/templpage/Temphome"
+import Campall from "./components/campallpage/Campall"
+import Payall from "./components/payallpage/Payall"
+import SignUpForm from "./components/Signupage/SignUpForm"
+import Fogpsw from "./components/Forgtpwpge/Forgetpw"
 
 
 
@@ -25,6 +32,15 @@ function App() {
           <Route path="/Camp" element={<Camp/>}/>
           <Route path="/pay"  element={<Payhome/>}/>
           <Route path="/exm" element={<Exhome/>}/>
+          <Route path="/conx" element={<Conhome/>}/>
+          <Route path="/statx" element={<Statuphome/>}/>
+          <Route path="/temp" element={<Temphome/>}/>
+          <Route path="/campss" element={<Campall/>}/>
+          <Route path="/payll" element={<Payall/>}/>              
+          <Route path="/Sinup" element={<SignUpForm/>}/>            
+          <Route path="/Fogp" element={<Fogpsw/>}/>            
+          <Route path="/Remp" element={<SignUpForm/>}/>            
+                       
         </Routes>
         </BrowserRouter>
         

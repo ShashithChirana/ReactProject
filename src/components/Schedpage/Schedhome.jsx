@@ -1,11 +1,12 @@
 import React from 'react'
-import Schpic from '../../assets/Schedpic.svg'
+import Schpic from '../../assets/Schedpic1.svg'
 
 //motion
 import {motion} from "framer-motion"
 //variants
 import {fadeIn} from '../../variants';
 import Navbar2 from '../Applipge/Navbar2';
+import { Emailpro } from '../email/emailpro';
 
 
 const Schedhome = () => {
@@ -46,6 +47,8 @@ className='mt-20 ml-56 mb-32' >
 <center><img src={Schpic} alt=""/></center>
 
 </motion.div>
+
+<Emailpro/>
 
 
     </div>

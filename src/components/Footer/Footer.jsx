@@ -24,12 +24,12 @@ const Footer = () => {
             className="bg-blue-500 hover:bg-blue-700 duration-300 px-5 py-2.5 font-[Poppins]
            rounded-md text-black hover:text-white md:w-auto w-full"
           >
-            Request Code
+            Send
           </button>
         </div>
       </div>
      
-      <ItemsContainer />
+     <center> <ItemsContainer /></center>
 
 
      

@@ -11,21 +11,33 @@ import Navbar2 from "../Applipge/Navbar2";
 import Schedhome from "../Schedpage/Schedhome";
 import Camp from "../Campaignpage/Camp";
 import Payhome from "../Paymentpage/Payhome";
+import Conhome from "../conexpge/Conhome";
+import Campall from "../campallpage/Campall";
+import Myprof from "../Myprofpage/Myprof";
+import Payall from "../payallpage/Payall";
+import Statuphome from "../statuppge/Statuphome";
+import Temphome from "../templpage/Temphome";
+import SignUpForm from "../Signupage/SignUpForm";
+
+
+
 
 
 const Navigate=()=>{
     return(
         <div>
-           {/* <Navbar/>
+            
+            <Navbar/>
             <Home/>
             <Features/>
             <Campaigns/>
             <Attract/>
             <Payments/>
-            <Footer/>*/}
+            <Footer/>
+           
 
-            <Navbar2/>
-            <Exhome/>
+        
+          
             
         </div>
     )
