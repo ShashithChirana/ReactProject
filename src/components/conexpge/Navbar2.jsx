@@ -3,11 +3,10 @@ import logo1 from '../../assets/logo1.png'
 //react icons
 
 import{FaBars, FaXmark} from 'react-icons/fa6'
-//import link from react scrol
-import { Link } from 'react-scroll';
 
 
-const Navbar = () => {
+
+const Navbar2 = () => {
 
     const[isMenuOpen, setIsMenuOpen]=useState(false);
 
@@ -16,15 +15,12 @@ const Navbar = () => {
     }
 
     const navItems =[
-        {link:"Overview", path:"home"},
-        {link:"Feature", path:"feture"},
+        {link:"Exams", path:"home"},
+        {link:"Applicants", path:"applicants"},
+        {link:"Schedules", path:"shedule"},
         {link:"Campaigns", path:"campaigns"},
         {link:"Payments", path:"payments"},
     ]
-
-    const Sin=[
-        {path:"/Sinup"}
-      ]
   return (
     <>
 
@@ -38,16 +34,16 @@ const Navbar = () => {
                     {/*showing navItems using map */}
                     <ul className='md:flex space-x-12 hidden'>
                         {
-                            navItems.map(({link,path}) => <Link activeClass='active' spy={true} smooth={true} offset={-100} key={link} to={path} className='block hover:text-blue-600 cursor-pointer'>{link}</Link>)
+                            navItems.map(({link,path}) => <div activeClass='active' spy={true} smooth={true} offset={-100} key={link} to={path} className='block hover:text-blue-700 cursor-pointer'>{link}</div>)
                         }
                     </ul>
             </div>
 
             {/*language and signup */}
             <div className='space-x-12 hidden md:flex items-center'>
-                <a href='/' className='hidden lg:flex items-center hover:text-secondary'><span>Notifications</span></a>
-                <a href="/Sinup" path="/Sinup"><button className='bg-blue-500 py-2 px-4 transition-all duration-300 rounded
-                hover:text-white hover:bg-blue-900'>Sign up</button></a>
+                <a href='/' className='hidden lg:flex items-center hover:text-blue-700'><span>Notifications</span></a>
+                <button className='bg-blue-500 py-2 px-4 transition-all duration-300 rounded
+                hover:text-white hover:bg-blue-900'>Log out</button>
             </div>
 
             {/*menu button only dsplay on mobile */}
@@ -66,8 +62,8 @@ const Navbar = () => {
     <div className={`space-y-4 px-4 pt-24 pb-5 bg-blue-500  text-xl ${isMenuOpen ? "block fixed top-0 right-0 left-0"
      : "hidden"}`}>
         {
-             navItems.map(({link,path}) => <Link activeClass='active' spy={true} smooth={true} offset={-80} key={link} to={path} className='block text-white hover:text-gray-300 cursor-pointer'
-             onClick={toggleMenu} >{link}</Link>)
+             navItems.map(({link,path}) => <div activeClass='active' spy={true} smooth={true} offset={-80} key={link} href={path} className='block text-white hover:text-blue-900 cursor-pointer'
+             onClick={toggleMenu} >{link}</div>)
         }
 
     </div>
@@ -77,5 +73,5 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
 

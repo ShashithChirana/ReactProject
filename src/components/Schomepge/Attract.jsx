@@ -43,7 +43,7 @@ const Attract = () => {
   
             <h3 className="text-3xl font-bold text-center text-primary">{act.name}</h3>
             <p className="text-tartiary text-center my-5">{act.description}</p>
-            <button className="btnPrimary w-60 mx-auto mt-8 flex items-center justify-center" >Launch</button>
+            <a href='/Sinup'> <button className="btnPrimary w-60 mx-auto mt-8 flex items-center justify-center" >Try now</button></a>
           </div>)
         }
       </div>

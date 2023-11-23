@@ -4,6 +4,11 @@ import {motion} from "framer-motion"
 import {fadeIn} from '../variants';
 
 const Banner = ( {banner, heading, subheading, btn1, btn2})=> {
+
+  const Sin=[
+    {path:"/Sinup"}
+  ]
+
   return (
     
       <div className='gradientBg rounded-xl rounded-br-[80px] md:p-9 px-4 py-9'>
@@ -32,8 +37,8 @@ const Banner = ( {banner, heading, subheading, btn1, btn2})=> {
               <p className='text-[#EBEBEB] text-2xl mb-8'>{subheading}</p>
            
             <div className='space-x-5 space-y-4'>
-                <button className='btnPrimary'>{btn1}</button>
-                <button className='btnPrimary'>{btn2}</button>
+            <a href="/Sinup" path="/Sinup"> <button className='btnPrimary'>{btn1}</button></a>
+            <a href="/Sinup" path="/Sinup"> <button className='btnPrimary'>{btn2}</button></a>
             </div>
             </motion.div>
            

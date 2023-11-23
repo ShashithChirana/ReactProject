@@ -74,26 +74,29 @@ const Payhome = () => {
 
             <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-2xl p-8 
             items-center flex justify-center hover:-translate-y-4 transition-all duration-300  cursor-pointer   '>
+                 <a href='payll'>
                 <div className=" border-spacing-1.5" >
                     <img src={cusPay} alt=""/>
                     <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>Handle customer payments</h5>
-                </div>
+                </div></a>
             </div>
 
             <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-2xl p-8 
             items-center flex justify-center hover:-translate-y-4 transition-all duration-300  cursor-pointer md:mt-16'>
+                <a href='payll'>
                 <div>
                     <img src={sclPay} alt=""/>
                     <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>Handle school payments</h5>
-                </div>
+                </div></a>
             </div>
 
             <div className='bg-[rgba(255, 255, 255, 0.04)] rounded-[35px] h-96 shadow-2xl p-8 
             items-center flex justify-center hover:-translate-y-4 transition-all duration-300  cursor-pointer '>
+                <a href='payll'>
                 <div>
                     <img src={dePay} alt=""/>
                     <h5 className='text-2xl font-semibold text-primary px-5 text-center mt-5'>Handle MTD payments</h5>
-                </div>
+                </div></a>
             </div>
 
             </div>
